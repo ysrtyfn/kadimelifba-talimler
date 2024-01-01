@@ -1,0 +1,96 @@
+<resources>
+    <string name="app_name">KadimElifba Exercises</string>
+    <string name="faaliyet_merkezi">KadimElifba</string>
+
+
+    <!-- Merkezi Sahne -->
+    <string name="merkezi_sahne_ismi">KadimElifba</string>
+    <string name="merkezi_sahne_btn_talime_basla">Start Exercise</string>
+
+
+    <!-- Tercihler Sahnesi -->
+    <string name="tercihler_sahnesi_ismi">Options</string>
+    <string name="tercihler_sahnesi_yafta_programciya_mail_ilet">Send Mail to Programmer</string>
+    <string name="tercihler_sahnesi_yafta_lisan_tercihi">Language</string>
+    <string name="tercihler_sahnesi_yafta_resim_ambari">Image Source</string>
+    <string name="tercihler_sahnesi_yafta_resim_kalitesi">Image Quality</string>
+    <string name="tercihler_sahnesi_yafta_resimler_hafizada_tutulsun_mu">Would you like to keep\nimages on phone memory?</string>
+    <string name="tercihler_sahnesi_yafta_resimleri_hafizadan_sil">Delete Images</string>
+    <string name="tercihler_sahnesi_yafta_hafizadan_silinen_resimlerin_agirligi">Size of the deleted images: %1$s</string>
+    <string name="tercihler_sahnesi_yafta_ac_hususilik_siyasetini">Privacy Policy</string>
+
+    <string name="tercihler_sahnesi_alet_ipucu_baslik">Details</string>
+    <string name="tercihler_sahnesi_alet_ipucu_tus_metni">Understood</string>
+    <string name="tercihler_sahnesi_alet_ipucu_ikon_tarifi">Details</string>
+    <string name="tercihler_sahnesi_alet_ipucu_resim_ambari">We currently have 2 sources for our images. If you experience slow loading of images,
+        you can change the source here.</string>
+    <string name="tercihler_sahnesi_alet_ipucu_resim_kalitesi">Your choice here will decide the quality of the images shown with questions.
+        If you are on a limited internet connection, I suggest you to choose lower image quality.</string>
+    <string name="tercihler_sahnesi_alet_ipucu_resimleri_hafizada_tutma">If you activate this option, we will download the images of questions
+        you have answered. This way you won\'t have to download them again.</string>
+
+
+    <!-- Talim Sahnesi -->
+    <string name="talim_sahnesi_ismi">Exercise</string>
+    <string name="talim_sahnesi_yafta_sual">Can you write the thing in the picture with KadimElifba?</string>
+    <string name="talim_sahnesi_sual_resmi_tarifi">This is the image of this question and describes this word: %1$s</string>
+    <string name="talim_sahnesi_btn_bosluk_harfi_tarifi">Space bar Button</string>
+    <string name="talim_sahnesi_btn_temizle">Clear Answer Field</string>
+    <string name="talim_sahnesi_btn_sonraki_sual">Next Question</string>
+
+    <string name="talim_sahnesi_rehber_baslik">User Guide</string>
+    <string name="talim_sahnesi_rehber_izahat">1. To see next question, swipe towards left\n</string>
+    <string name="talim_sahnesi_rehber_btn_makbul">Understood</string>
+    <string name="talim_sahnesi_rehber_btn_iptal">Cancel</string>
+
+    <string name="talim_sahnesi_cetele_baslik">ScoreBoard</string>
+    <string name="talim_sahnesi_cetele_izahat">Number of Correct Answers: %1$d\nNumber of Wrong Answers: %2$d</string>
+    <string name="talim_sahnesi_cetele_btn_makbul">Understood</string>
+    <string name="talim_sahnesi_cetele_btn_iptal">Cancel</string>
+
+    <string name="talim_sahnesi_tasnif_baslik">Category</string>
+    <string name="talim_sahnesi_tasnif_izahat">You can choose questions from below categories.</string>
+    <string name="talim_sahnesi_tasnif_btn_makbul">Accept</string>
+    <string name="talim_sahnesi_tasnif_btn_iptal">Cancel</string>
+    <string name="talim_sahnesi_tasnif_secilmis_sinif_hali">This category is currently selected: %1$s. You can click to keep questions belonging
+        this category out of this exercise.</string>
+    <string name="talim_sahnesi_tasnif_secilmemis_sinif_hali">This category is currently not selected: %1$s You can click to keep questions belonging
+        this category in this exercise.</string>
+
+    <string name="talim_sahnesi_sual_cevaplama_neticesi_tekrar">Again?</string>
+    <string name="talim_sahnesi_sual_cevaplama_neticesi_sonraki">Next</string>
+    <string name="talim_sahnesi_sual_cevaplama_neticesi_muspet">Congratulations, Latin: </string>
+    <string name="talim_sahnesi_sual_cevaplama_neticesi_menfi">Unfortunately</string>
+
+    <string name="talim_sahnesi_netice_dogru">Right</string>
+    <string name="talim_sahnesi_netice_yanlis">Wrong</string>
+
+
+    <!-- Hususilik Siyaseti Sahnesi -->
+    <string name="hususilik_siyaseti_sahnesi_ismi">Privacy Policy</string>
+
+
+    <!-- Umumi -->
+    <string name="ust_idare_btn_ana_ekran">Home Page</string>
+    <string name="ust_idare_btn_rehber">User Guide</string>
+    <string name="ust_idare_btn_netice_tahtasi">Score Board</string>
+    <string name="ust_idare_btn_tasnif">Category</string>
+    <string name="ust_idare_btn_tercihler">Menu</string>
+    <string name="yafta_ag_hatasi">No Internet</string>
+    <string name="email_mevzusu">About KadimElifba Exercises</string>
+    <string name="email_muhtevasi">Hello,\n\nI am contacting for the matter below:\n\n\n\nThank you.</string>
+
+    <string name="lisan">Latin Turkish</string>
+
+
+
+
+
+
+
+
+
+
+
+
+</resources>

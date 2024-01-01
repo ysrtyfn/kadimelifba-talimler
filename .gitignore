@@ -1,0 +1,26 @@
+.DS_Store
+.gradle
+.cxx
+*.iml
+
+/.idea/caches
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/navEditor.xml
+/.idea/assetWizardSettings.xml
+
+/captures
+/build
+.externalNativeBuild
+
+local.properties
+/local.properties
+
+# Keystore files
+*.jks
+*.keystore
+
+apikey.properties
+
+/screenshots

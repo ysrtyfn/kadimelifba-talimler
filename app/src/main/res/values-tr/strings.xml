@@ -1,0 +1,101 @@
+<resources>
+    <string name="app_name">KadimElifba Talimler</string>
+    <string name="faaliyet_merkezi">KadimElifba</string>
+
+
+    <!-- Merkezi Sahne -->
+    <string name="merkezi_sahne_ismi">KadimElifba</string>
+    <string name="merkezi_sahne_btn_talime_basla">Talime Başla</string>
+
+
+    <!-- Tercihler Sahnesi -->
+    <string name="tercihler_sahnesi_ismi">Tercihler</string>
+    <string name="tercihler_sahnesi_yafta_programciya_mail_ilet">Programcıya Mail İlet</string>
+    <string name="tercihler_sahnesi_yafta_lisan_tercihi">Lisan</string>
+    <string name="tercihler_sahnesi_yafta_resim_ambari">Resim Ambarı</string>
+    <string name="tercihler_sahnesi_yafta_resim_kalitesi">Resim Kalitesi</string>
+    <string name="tercihler_sahnesi_yafta_resimler_hafizada_tutulsun_mu">Resimler cihaz hafızasında\ntutulsun mu?</string>
+    <string name="tercihler_sahnesi_yafta_resimleri_hafizadan_sil">Resimleri Hafızadan Sil</string>
+    <string name="tercihler_sahnesi_yafta_hafizadan_silinen_resimlerin_agirligi">Hafızadan silinen resimlerin ağırlığı: %1$s</string>
+    <string name="tercihler_sahnesi_yafta_ac_hususilik_siyasetini">Hususilik Siyaseti</string>
+
+    <string name="tercihler_sahnesi_alet_ipucu_baslik">Teferruat</string>
+    <string name="tercihler_sahnesi_alet_ipucu_tus_metni">Anladım</string>
+    <string name="tercihler_sahnesi_alet_ipucu_ikon_tarifi">Teferruat</string>
+    <string name="tercihler_sahnesi_alet_ipucu_resim_ambari">Şimdilik 2 adet resim ambarına sahibiz. Eğer resimlerin hazırlanırken bir sıkıntı tecrübe
+    ederseniz, buradan ambarı değiştirebilirisiz.</string>
+    <string name="tercihler_sahnesi_alet_ipucu_resim_kalitesi">Buradaki tercihiniz suallerin resim kalitelerini tayin eder.
+        Ağ irtibatınız tahdidli ise düşük kalite resimleri tercih etmenizi tavsiye ederim.</string>
+    <string name="tercihler_sahnesi_alet_ipucu_resimleri_hafizada_tutma">Eğer bu tercihi faal hale getirirseniz, cevapladığınız suallerin resimlerini
+        cihazınızın hafızasına kaydedeceğiz ve bu sayede tekrar ağdan resim almanıza lüzum kalmayacak.</string>
+
+
+    <!-- Talim Sahnesi -->
+    <string name="talim_sahnesi_ismi">Talim</string>
+    <string name="talim_sahnesi_yafta_sual">Resimdekini KadimElifba ile yazabilir misiniz?</string>
+    <string name="talim_sahnesi_sual_resmi_tarifi">Bu sualin resmidir ve şu kelimesiyi tarif eder: %1$s</string>
+    <string name="talim_sahnesi_btn_bosluk_harfi_tarifi">Boşluk Tuşu</string>
+    <string name="talim_sahnesi_btn_temizle">Cevap Sahasını Temizle</string>
+    <string name="talim_sahnesi_btn_sonraki_sual">Sonraki Sual</string>
+
+    <string name="talim_sahnesi_rehber_baslik">Rehber</string>
+    <string name="talim_sahnesi_rehber_izahat">1. Sonraki suale geçmek için sola doğru kaydırın\n</string>
+    <string name="talim_sahnesi_rehber_btn_makbul">Anladım</string>
+    <string name="talim_sahnesi_rehber_btn_iptal">İptal</string>
+
+    <string name="talim_sahnesi_cetele_baslik">Çetele</string>
+    <string name="talim_sahnesi_cetele_izahat">Doğru Cevap Adedi: %1$d\nYanlış Cevap Adedi: %2$d</string>
+    <string name="talim_sahnesi_cetele_btn_makbul">Anladım</string>
+    <string name="talim_sahnesi_cetele_btn_iptal">İptal</string>
+
+    <string name="talim_sahnesi_tasnif_baslik">Tasnif</string>
+    <string name="talim_sahnesi_tasnif_izahat">Sualleri aşağıdaki sınıflara göre tasnifleyebilirsiniz.</string>
+    <string name="talim_sahnesi_tasnif_btn_makbul">Makbul</string>
+    <string name="talim_sahnesi_tasnif_btn_iptal">İptal</string>
+    <string name="talim_sahnesi_tasnif_secilmis_sinif_hali">Bu tasnif halihazırsa seçili: %1$s. Tıklayarak bu sınıfa ait sualleri
+        bu talimden çıkartabilirisiniz.</string>
+    <string name="talim_sahnesi_tasnif_secilmemis_sinif_hali">Bu tasnif hali hazırda seçili değil: %1$s Tıklayarak bu sınıfa ait sualleri
+        bu talime dahil edebilirsiniz.</string>
+
+    <string name="talim_sahnesi_sual_cevaplama_neticesi_tekrar">Tekrar?</string>
+    <string name="talim_sahnesi_sual_cevaplama_neticesi_sonraki">Sonraki</string>
+    <string name="talim_sahnesi_sual_cevaplama_neticesi_muspet">Tebrikler, Latin: </string>
+    <string name="talim_sahnesi_sual_cevaplama_neticesi_menfi">Maalesef, cevabınız hatalı</string>
+
+    <string name="talim_sahnesi_netice_dogru">Doğru</string>
+    <string name="talim_sahnesi_netice_yanlis">Yanlış</string>
+
+
+    <!-- Hususilik Siyaseti Sahnesi -->
+    <string name="hususilik_siyaseti_sahnesi_ismi">Hususilik Siyaseti</string>
+
+
+    <!-- Umumi -->
+    <string name="ust_idare_btn_ana_ekran">Giriş Sayfası</string>
+    <string name="ust_idare_btn_rehber">Talebe Rehberi</string>
+    <string name="ust_idare_btn_netice_tahtasi">Netice Tahtası</string>
+    <string name="ust_idare_btn_tasnif">Tasnif</string>
+    <string name="ust_idare_btn_tercihler">Tercihler</string>
+    <string name="yafta_ag_hatasi">Ağ irtibatı sağlanamadı</string>
+    <string name="email_mevzusu">KadimElifba Talimler Hakkında</string>
+    <string name="email_muhtevasi">Merhaba,\n\nAşağıdaki mesele için irtibata geçiyorum:\n\n\n\nTeşekkürler.</string>
+
+    <string name="lisan">Latin-i Türkçe</string>
+<!--    <string name="ota" translatable="false">Osman-i Türkçe</string>-->
+<!--    <string name="tr" translatable="false">Latin-i Türkçe</string>-->
+<!--    <string name="en" translatable="false">English</string>-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</resources>

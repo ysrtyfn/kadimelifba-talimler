@@ -1,0 +1,7 @@
+/build
+/release
+google-services.json
+
+/src/main/res/raw/privacy_policy.html
+
+/src/main/res/values/sirlar.xml

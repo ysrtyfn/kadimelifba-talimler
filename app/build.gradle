@@ -1,0 +1,154 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+    id("com.google.devtools.ksp")
+    id 'com.google.gms.google-services'
+}
+
+def apikeyPropertiesFile = rootProject.file("apikey.properties")
+def apikeyProperties = new Properties()
+apikeyProperties.load(new FileInputStream(apikeyPropertiesFile))
+
+android {
+    namespace 'com.ysrtyfn.kadimelifbatalimler'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.ysrtyfn.kadimelifbatalimler"
+        minSdk 24
+        targetSdk 34
+        versionCode 13
+        versionName "1.5.2"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        vectorDrawables {
+            useSupportLibrary true
+        }
+
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments += ["room.schemaLocation": "$projectDir/roomSchemas".toString()]
+                arguments += ["room.incremental": "true"]
+            }
+        }
+
+        buildConfigField("String", "MUTA_MAHZENI", apikeyProperties['MUTA_MAHZENI'])
+        buildConfigField("String", "PROGRAMCI_AG_SAYFASI", apikeyProperties['PROGRAMCI_AG_SAYFASI'])
+        buildConfigField("String", "PROGRAMCI_EMAIL", apikeyProperties['PROGRAMCI_EMAIL'])
+        buildConfigField("String", "AD_ID_TAM_EKRAN", apikeyProperties['AD_ID_TAM_EKRAN'])
+        buildConfigField("String", "TECRUBE_CIHAZI_AD_ID_1", apikeyProperties['TECRUBE_CIHAZI_AD_ID_1'])
+        buildConfigField("String", "TECRUBE_CIHAZI_AD_ID_2", apikeyProperties['TECRUBE_CIHAZI_AD_ID_2'])
+    }
+
+    buildTypes {
+        release {
+            // Enables code shrinking, obfuscation, and optimization for only
+            // your project's release build type. Make sure to use a build
+            // variant with `isDebuggable=false`.
+            minifyEnabled true // code shrinking
+
+            // Enables resource shrinking, which is performed by the
+            // Android Gradle plugin.
+            shrinkResources true // to remove unneeded resources.
+
+            // Includes the default ProGuard rules files that are packaged with
+            // the Android Gradle plugin. To learn more, go to the section about
+            // R8 configuration files.
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.debug
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    kotlinOptions {
+        jvmTarget = '17'
+    }
+
+    buildFeatures {
+        compose true
+        buildConfig = true
+    }
+
+    composeOptions {
+        kotlinCompilerExtensionVersion = "1.4.4"
+    }
+
+    packagingOptions {
+        resources {
+            excludes += '/META-INF/{AL2.0,LGPL2.1}'
+        }
+    }
+}
+
+ext {
+    roomVersion = "2.5.2"
+}
+
+dependencies {
+
+    implementation platform("androidx.compose:compose-bom:2023.08.00")
+    implementation("androidx.compose.runtime:runtime")
+    implementation("androidx.compose.foundation:foundation")
+    implementation("androidx.compose.animation:animation")
+    implementation("androidx.compose.animation:animation-graphics")
+    implementation("androidx.compose.material:material")
+    implementation("androidx.compose.material:material-icons-extended")
+    implementation("androidx.compose.material3:material3")
+    implementation("androidx.compose.material3:material3-window-size-class")
+    implementation("androidx.compose.ui:ui")
+    implementation("androidx.compose.ui:ui-graphics")
+    implementation("androidx.compose.ui:ui-tooling-preview")
+
+    implementation("androidx.core:core-ktx:1.10.1")
+    implementation("androidx.core:core-splashscreen:1.0.1")
+    implementation("androidx.appcompat:appcompat:1.6.1")
+    implementation("androidx.appcompat:appcompat-resources:1.6.1")
+    implementation("androidx.activity:activity-compose:1.7.2")
+    implementation("androidx.fragment:fragment-ktx:1.6.1")
+    implementation("androidx.navigation:navigation-compose:2.7.1")
+    implementation("androidx.navigation:navigation-runtime-ktx:2.7.1")
+    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.6.1")
+    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.1")
+    implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.6.1")
+    implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.6.1")
+    implementation("androidx.datastore:datastore-preferences:1.0.0")
+
+    // Room for simple persistence with an ORM
+    implementation("androidx.room:room-runtime:$roomVersion")
+    implementation("androidx.room:room-ktx:$roomVersion")
+    // annotationProcessor "androidx.room:room-compiler:$roomVersion")
+    ksp("androidx.room:room-compiler:$roomVersion")
+
+    implementation platform("org.jetbrains.kotlin:kotlin-bom:1.8.10")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android")
+
+    implementation("com.squareup.retrofit2:retrofit:2.9.0")
+//    implementation("com.squareup.retrofit2:converter-scalars:2.9.0") // Retrofit with scalar Converter
+    implementation 'com.squareup.retrofit2:converter-moshi:2.9.0' // Retrofit with Moshi Converter
+
+    implementation("com.squareup.okhttp3:okhttp:4.11.0")
+    implementation("com.squareup.moshi:moshi-kotlin:1.15.0")
+    ksp("com.squareup.moshi:moshi-kotlin-codegen:1.15.0")
+    implementation("io.coil-kt:coil-compose:2.4.0")
+    implementation("com.airbnb.android:lottie-compose:6.1.0")
+
+    implementation platform("com.google.firebase:firebase-bom:32.2.2")
+    implementation("com.google.firebase:firebase-storage-ktx")
+//    implementation("com.google.android.material:material:1.9.0")
+    implementation("com.google.android.gms:play-services-ads-lite:22.3.0")
+
+    androidTestImplementation platform("androidx.compose:compose-bom:2023.08.00")
+    androidTestImplementation("androidx.compose.ui:ui-test-junit4")
+    androidTestImplementation("androidx.test.ext:junit:1.1.5")
+    androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
+
+    testImplementation("junit:junit:4.13.2")
+
+    debugImplementation("androidx.compose.ui:ui-test-manifest")
+    debugImplementation("androidx.compose.ui:ui-tooling")
+}

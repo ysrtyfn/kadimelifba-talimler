@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Splash Screen Theme. -->
+    <style name="Theme.KadimElifbaTalimlerKarsilama" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/kara_vaziyet_cubugu</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/icon_splash_screen_night</item>
+        <item name="windowSplashScreenAnimationDuration">700</item>
+        <item name="postSplashScreenTheme">@style/Theme.KadimElifbaTalimler</item>
+
+        <!-- Status bar and Nav bar configs -->
+        <item name="android:statusBarColor" >@color/kara_vaziyet_cubugu</item>
+        <item name="android:navigationBarColor">@color/kara_vaziyet_cubugu</item>
+        <item name="android:windowLightStatusBar">false</item>
+
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+    </style>
+</resources>
